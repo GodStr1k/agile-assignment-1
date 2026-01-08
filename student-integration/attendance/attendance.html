@@ -1,9 +1,27 @@
-<h3>Attendance Calculator</h3>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<input id="sid" placeholder="Student ID"><br><br>
-<input id="total" placeholder="Total Classes"><br><br>
-<input id="attended" placeholder="Attended Classes"><br><br>
+<div class="nav">
+  <a href="../index.html">Home</a> |
+  <a href="../dashboard/dashboard.html">Dashboard</a>
+</div>
 
-<button onclick="saveAttendance()">Submit</button>
+<h3>Subject-wise Attendance</h3>
+
+<input id="sid" placeholder="Student ID"><br>
+<input id="subject" placeholder="Subject Name"><br>
+<input id="total" placeholder="Total Classes"><br>
+<input id="attended" placeholder="Attended Classes"><br>
+
+<button onclick="saveAttendance()">Save</button>
+
+<pre id="result"></pre>
 
 <script src="attendance.js"></script>
+</body>
+</html>

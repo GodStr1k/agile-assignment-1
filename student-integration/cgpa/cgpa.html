@@ -1,8 +1,27 @@
-<h3>CGPA Calculator</h3>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CGPA</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<input id="sid" placeholder="Student ID"><br><br>
-<input id="cgpa" placeholder="CGPA"><br><br>
+<div class="nav">
+  <a href="../index.html">Home</a> |
+  <a href="../dashboard/dashboard.html">Dashboard</a>
+</div>
 
-<button onclick="saveCGPA()">Submit</button>
+<h3>Semester-wise CGPA</h3>
+
+<input id="sid" placeholder="Student ID"><br>
+<input id="sem" placeholder="Semester"><br>
+<input id="credits" placeholder="Credits"><br>
+<input id="gpa" placeholder="GPA"><br>
+
+<button onclick="saveCGPA()">Save</button>
+
+<pre id="out"></pre>
 
 <script src="cgpa.js"></script>
+</body>
+</html>
