@@ -6,9 +6,11 @@ function saveAttendance() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       student_id: sid.value,
+      subject: subject.value,
       percentage
     })
+  }).then(() => {
+    result.innerText =
+      `Subject: ${subject.value}\nAttendance: ${percentage.toFixed(2)}%`;
   });
-
-  alert("Attendance Saved");
 }
